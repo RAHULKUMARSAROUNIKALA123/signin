@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+    <style>
+        body{
+            padding:0;
+            margin:0;
+            background:orange;
+        }
+        *{
+            box-sizing:border-box;
+        }
+        h2{
+            text-align:center;
+            font-family:fantasy;
+            letter-spacing:5px;
+            font-size:50px;
+            color:blue;
+            
+        }
+        #box{
+            width:600px;
+            height:700px;
+            background:white;
+            margin:20px auto;  
+        }
+        input{
+            width:500px;
+            height:60px;
+            padding:20px 0 0  5px;
+            margin:20px 40px;
+            border:none;
+            border-bottom:2px solid black;
+            border-radius:5px;
+            outline:none;
+            font-size:20px;
+        }
+        label{
+            margin:0px 0 0px 40px;
+            position:relative;
+            top:40px;
+            font-family:courier;
+            font-weight:bold;
+        }
+        input[type="submit"]{
+            background:blue;
+            color:white;
+            font-size:25px;
+            padding:10px 0;
+        }
+       #box a{
+            text-align:center;
+            text-decoration:none;
+            position:relative;
+            left:260px;
+            text-align:center;
+            font-size:30px;
+            color:black;
+        }
+        #box h5{
+            text-align:center;
+            font-size:20px;
+            font-family:cursive;
+
+        }
+        @media screen and (max-width:700px){
+            input{
+                width:250px;
+            }
+            #box{
+                width:340px;
+            }
+            #box a{
+                text-align:center;
+                position:relative;
+                left:110px;
+            }
+        }
+         
+    </style>
+
+
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="box">
+                        <h2>Login</h2>
+                        <label for="">Email</label><br>
+                        <input type="text" name="email" required><br>
+                        <label for="">Password</label><br>
+                        <input type="password" name="password" reqiured><br>
+                        <input type="submit" value="Login">
+                        <h5>Or sign in using </h5>
+                        <a href=""><i class="fa fa-facebook-square"></i> </a>
+                         <a href=""><i class="fa fa-twitter"></i></a>
+                         <a href=""><i class="fa fa-google"></i></a>
+                          
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
